@@ -1,7 +1,7 @@
 <h1><%= @article.title %></h1>
 <p><%= @article.body %></p>
 <p>Total Comments: <%= @article.comments.count %></p>
-<h2><%= render partial: 'articles/comment', collection: @article.comments.reverse %></h2>
+<p><%= render partial: 'articles/comment', collection: @article.comments.reverse %></p>
 <%= render partial: 'comments/form' %>
 <%= link_to "<< Back to Articles List", articles_path %>
 <%= link_to "Edit", edit_article_path(@article) %>
