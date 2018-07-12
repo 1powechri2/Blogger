@@ -1,4 +1,4 @@
-require 'rails helper'
+require 'rails_helper'
 
 describe 'User visits individual article page' do
   describe 'that they have accessed by link via the index page' do
