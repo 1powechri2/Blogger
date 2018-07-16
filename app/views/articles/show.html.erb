@@ -1,5 +1,6 @@
 <h1><%= @article.title %></h1>
 <p><%= @article.body %></p>
+<p><%= @article.tag_list %></p>
 <p>Total Comments: <%= @article.comments.count %></p>
 <p><%= render partial: 'articles/comment', collection: @article.comments.reverse %></p>
 <%= render partial: 'comments/form' %>
